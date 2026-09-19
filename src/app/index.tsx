@@ -1,9 +1,11 @@
-import { Text, View, StyleSheet } from "react-native";
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import JogoDados from '../components/JogoDados'; 
 
-export default function Index() {
+export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Edit src/app/index.tsx to edit this screen.</Text>
+      <JogoDados />
     </View>
   );
 }
@@ -11,7 +13,8 @@ export default function Index() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: '#f5f5f5',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
